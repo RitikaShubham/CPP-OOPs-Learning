@@ -27,3 +27,55 @@ My daily learning journey of Object-Oriented Programming in C++ with examples an
 - [ ] Encapsulation
 - [ ] Virtual Functions
 - [ ] OOPs in DSA Problems
+
+
+#include <iostream>
+using namespace std;
+
+class Student{   // class created 
+    private:
+
+    string Name;    // data members 
+    int Age;
+    int Height;
+
+    public:
+
+        int getAge(){      // functions 
+        return this->Age;
+    }
+};
+
+
+class Human {
+
+    public:
+        int Age;
+        int Height;
+        int Weight;
+
+    public:
+
+    int getAge(){
+        return this->Age;
+    }
+
+    int setHeight( int h ){
+         return this->Height = h;
+    }
+};
+ // syntax of inheritance 
+ // class name (child) : access mode (p/p/g) parent class {}
+
+class Male : public Human {
+ public:
+     string color;
+}
+
+int main(){
+
+    Male object1;
+    object1.color;
+}
+
+
